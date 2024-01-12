@@ -23,7 +23,7 @@
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#work" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
     <p>WORK</p>
   </a>
@@ -76,19 +76,15 @@
     </div><br>
     
     <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
+      <div class="w3-third w3-section">
         <span class="w3-xlarge">8+</span><br>
         Programming Languages
       </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">4+</span><br>
-        Partners
-      </div>
-      <div class="w3-quarter w3-section">
+      <div class="w3-third w3-section">
         <span class="w3-xlarge">7+</span><br>
         Projects Done
       </div>
-      <div class="w3-quarter w3-section">
+      <div class="w3-third w3-section">
         <span class="w3-xlarge">4+</span><br>
         Interviews Attend
       </div>
@@ -99,13 +95,15 @@
     </a>
     
     <!-- Grid for pricing tables -->
-    <h3 class="w3-padding-16 w3-text-light-grey">Projects</h3>
+    <h3 class="w3-padding-16 w3-text-light-grey" id="work">Projects</h3>
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half w3-margin-bottom" >
         <div class="w3-white w3-center w3-opacity w3-hover-opacity-off">
           <h2 class="w3-dark-grey w3-xlarge w3-padding-32">EzyRent (Android Mobile App)</h2>
           <div class="w3-padding-16"></div>
-          <img src="images/ezyrentMobile.png" class="w3-image" width="300px" height="400px">
+          <a href="https://drive.google.com/file/d/1ISYzPqamYulS6O6l3Uv-XE3DtTAVtwil/view?usp=drive_link" target="_blank">
+            <img src="images/ezyrentMobile.png" class="w3-image" width="300px" height="400px">
+          </a>
           <div class="w3-padding-16"></div>
         </div>
       </div>
@@ -114,7 +112,9 @@
         <div class="w3-white w3-center w3-opacity w3-hover-opacity-off">
           <h2 class="w3-dark-grey w3-xlarge w3-padding-32">EzyRent (Web App)</h2>
           <div class="w3-padding-16"></div>
-          <img src="images/ezyRentweb.png" class="w3-image" width="300px" height="400px">
+          <a href="https://ezyrent.online/" target="_blank">
+            <img src="images/ezyRentweb.png" class="w3-image" width="300px" height="400px">
+          </a>
           <div class="w3-padding-16"></div>
         </div>
       </div>
@@ -127,7 +127,9 @@
         <div class="w3-white w3-center w3-opacity w3-hover-opacity-off">
           <h2 class="w3-dark-grey w3-xlarge w3-padding-32">co8 Workspace</h2>
           <div class="w3-padding-16"></div>
-          <img src="images/co8web.png" class="w3-image" width="300px" height="400px">
+          <a href="https://www.co8app.com/co8-2/workspace/" target="_blank">
+            <img src="images/co8web.png" class="w3-image" width="300px" height="400px">
+          </a>
           <div class="w3-padding-16"></div>
         </div>
       </div>
@@ -138,23 +140,22 @@
   </div>
   
   <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="work">
-    <h2 class="w3-text-light-grey">My Photos</h2>
+  <div class="w3-padding-64 w3-content">
+    <h2 class="w3-text-light-grey">Gallery</h2>
     <hr style="width:200px" class="w3-opacity">
 
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/sailboat.jpg" style="width:100%">
+        <img src="images/co8.png" style="width:100%">
+        <img src="images/co82.png" style="width:100%">
+        <img src="images/co83.png" style="width:100%">
       </div>
 
       <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
+        <img src="images/co84.png" style="width:100%">
+        <img src="images/co85.png" style="width:100%">
+        <img src="images/co86.png" style="width:100%">
       </div>
     <!-- End photo grid -->
     </div>
@@ -173,28 +174,39 @@
     </div><br>
     <p>Let's get in touch. Send me a message:</p>
 
-    <form action="/action_page.php" target="_blank">
+    <!-- <form action="action.php" method="post" target="_blank">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
       <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit" onclick="displayModal(true)">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
     </form>
+
+    <div id="successMsg" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container w3-center w3-padding-small">
+          <span onclick="displayModal(false)" class="w3-button w3-display-topright">&times;</span>
+          <p>We have received your submission<br>Thank you</p>
+        </div>
+      </div>
+    </div> -->
   <!-- End Contact Section -->
   </div>
   
     <!-- Footer -->
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i> -->
+    <a href="https://www.linkedin.com/in/ameerul-hanif-hasri-015b5727a/">
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </a>
     <p class="w3-medium">Powered by <strong>Ameerul Hanif</strong></p>
   <!-- End footer -->
   </footer>
@@ -202,5 +214,6 @@
 <!-- END PAGE CONTENT -->
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
